@@ -53,3 +53,6 @@ require('./eventlist/manager_event_list');
 
 //--------------------[ AssistedSale ]----------------//
 require('./assistedsale/assistedsale');
+
+//--------------------[ Functions ]----------------//
+require('../functions/frontEnd');

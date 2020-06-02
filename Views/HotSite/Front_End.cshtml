@@ -1,0 +1,62 @@
+@{
+    ViewBag.Title = "Front End";
+    Layout = "~/Views/Shared/Base/_Layout.cshtml";
+}
+
+<!-- ~/Views/Shared/Blocks/_InfoBar.cshtml -->
+@Html.Partial("Blocks/_InfoBar")
+
+<div id="contact-form">
+    <div class="ui container margin bottom large">
+        <div class="ui grid">
+            <div class="nine wide column">
+                <form class="ui form">
+                    <h4 class="ui dividing header">Formul&aacute;rio de Cadastro</h4>
+
+                    <div class="field">
+                        <div class="two fields">
+                            <div class="field">
+                                <input type="text" name="name" class="digit-input" placeholder="Nome">
+                            </div>
+                            <div class="field">
+                                <input type="email" name="email" class="digit-input" placeholder="E-mail">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="two fields">
+                            <div class="six wide column field">
+                                <input type="text" name="tel" class="digit-input" placeholder="Telefone">
+                            </div>
+
+                            <div class="ten wide column field">
+                                <input type="text" name="subject" class="digit-input" placeholder="Assunto">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <textarea name="message" class="digit-input" placeholder="Mensagem"></textarea>
+                    </div>
+
+                    <button class="ui green right floated button">Cadastrar</button>
+                </form>
+            </div>
+
+            <div class="seven wide column">
+                <div class="ui card">
+                    <div class="content result-data">
+                        <div class="description">
+                            <p><strong>Nome: </strong> <span class="name"></span></p>
+                            <p><strong>E-mail: </strong> <span class="email"></span></p>
+                            <p><strong>Telefone: </strong> <span class="tel"></span></p>
+                            <p><strong>Assunto: </strong> <span class="subject"></span></p>
+                            <p><strong>Mensagem: </strong> <span class="message"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
